@@ -323,86 +323,7 @@ switch (cor) {
     console.log("Cor quente");
     break;
 }
-      //********************** exemplo ***********************
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Cor Aleatória com JS</title>
-    <style>
-        body {
-            /* Transição suave para a mudança de cor */
-            transition: background-color 0.8s ease-in-out; 
-            min-height: 100vh; /* Garante que o corpo preencha a tela */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: sans-serif;
-        }
-        button {
-            padding: 15px 30px;
-            font-size: 20px;
-            cursor: pointer;
-            background-color: #2ecc71; /* Cor inicial do botão */
-            color: white;
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 4px #27ae60;
-            transition: background-color 0.2s, box-shadow 0.2s;
-        }
-        button:active {
-            box-shadow: 0 1px #27ae60;
-            transform: translateY(3px);
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 30px;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Mude a Cor de Fundo!</h1>
-    <button id="colorButton">Gerar Nova Cor Aleatória</button>
-
-    <script>
-        // Função que gera um código de cor hexadecimal aleatório (#RRGGBB)
-        function gerarCorAleatoria() {
-            const letras = '0123456789ABCDEF';
-            let cor = '#';
-            
-            // Loop para gerar 6 caracteres hexadecimais
-            for (let i = 0; i < 6; i++) {
-                // Seleciona uma letra/número aleatório de 0 a F
-                cor += letras[Math.floor(Math.random() * 16)];
-            }
-            return cor;
-        }
-
-        // Função para aplicar a cor na página
-        function mudarCorFundo() {
-            const novaCor = gerarCorAleatoria();
-            document.body.style.backgroundColor = novaCor;
-            
-            // Opcional: Mostra a cor no console (F12)
-            console.log("Nova cor gerada:", novaCor);
-        }
-
-        // Adiciona um "ouvinte de evento" ao botão para chamar a função ao ser clicado
-        document.getElementById('colorButton').addEventListener('click', mudarCorFundo);
-
-        // Define a cor de fundo inicial quando a página carrega
-        mudarCorFundo(); 
-    </script>
-
-</body>
-</html>
-                //***************************************************************************************
-
-                
-              
-              </code></pre>
+     </code></pre>
             </div>
 
           </div>
@@ -662,5 +583,6 @@ document.getElementById('campo').addEventListener('keyup', function() {
   </script>
 </body>
 </html>
+
 
 
